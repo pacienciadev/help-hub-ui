@@ -1,8 +1,0 @@
-{
-  "name": "help-hub-ui",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "react-vite",
-  "id": "34b3e68b"
-}
