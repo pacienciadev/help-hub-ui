@@ -23,7 +23,7 @@ export const PublicRoute = ({
       {...rest}
       render={(props) =>
         loggedIn && restricted ? (
-          <Redirect to="/home/tab1" />
+          <Redirect to="/home/home-tab" />
         ) : (
           <Component {...props} />
         )

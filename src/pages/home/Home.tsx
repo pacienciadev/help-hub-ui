@@ -9,18 +9,19 @@ import {
 
 import { Route } from "react-router";
 
-import Tab1 from "./Tab1";
 import Tab2 from "./Tab2";
 import Tab3 from "./Tab3";
 
-import { ellipse, square, triangle } from "ionicons/icons";
+import { ellipse, homeOutline, square } from "ionicons/icons";
+
+import HomeTab from "./tabs/HomeTab";
 
 const HomePage: React.FC = () => {
   return (
     <IonTabs>
       <IonRouterOutlet>
-        <Route exact path="/home/tab1">
-          <Tab1 />
+        <Route exact path="/home/home-tab">
+          <HomeTab />
         </Route>
 
         <Route exact path="/home/tab2">
@@ -34,7 +35,7 @@ const HomePage: React.FC = () => {
 
       <IonTabBar slot="bottom">
         <IonTabButton tab="tab1" href="/home/tab1">
-          <IonIcon aria-hidden="true" icon={triangle} />
+          <IonIcon aria-hidden="true" icon={homeOutline} />
           <IonLabel>Home</IonLabel>
         </IonTabButton>
 

@@ -73,7 +73,7 @@ const LoginWithPasswordPage: React.FC = () => {
         localStorage.setItem("AUTH_DATA", JSON.stringify(data));
         localStorage.setItem("EXPIRES_IN", JSON.stringify(expiresIn));
 
-        router.push("/home/tab1", "root", "replace");
+        router.push("/home/home-tab", "root", "replace");
       })
       .catch(() => {
         setIsToastOpened(true);
